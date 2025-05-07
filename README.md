@@ -86,10 +86,10 @@ A sample printout for individual queries (e.g., for "captain" and "letters") sho
 The relatively high average recall suggests that true matches for a query (if they exist in the evaluated set) are often found, though not necessarily all within the top K. The precision indicates that a fair portion of the Top-10 results are indeed correct matches.
 
 **3.2. Qualitative Results**
-The `show_top_matches` function provides visual examples of the keyword spotting results. (Referencing images similar to those in `Screenshot 2025-05-06 at 19.32.05.pdf`).
+The `show_top_matches` function provides visual examples of the keyword spotting results.
 
-* *(Example from PDF: )* For query "captain" (`304-12-03.png`), the top results include other instances of "captain" (green border) as well as visually similar but different words.
-* *(Example from PDF: )* For query "letters" (`303-02-01.png`), several instances of "letters" are retrieved with high ranking.
+*  For query "captain" (`304-12-03.png`), the top results include other instances of "captain" (green border) as well as visually similar but different words.
+*  For query "letters" (`303-02-01.png`), several instances of "letters" are retrieved with high ranking.
 
 These visualizations confirm that the DTW approach on the extracted feature sequences can successfully identify and rank visually similar word images. The green borders highlight correct retrievals based on the textual label.
 
