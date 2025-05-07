@@ -1,9 +1,5 @@
 **Report: Keyword Spotting in Historical Documents using Feature Engineering and Dynamic Time Warping**
 
-**Authors:** 
-**Course:** Pattern Recognition, Exercise 3
-**Date:** May 7, 2025
-
 **Abstract:**
 This report details a "classic" feature engineering approach combined with Dynamic Time Warping (DTW) for keyword spotting in the George Washington historical document dataset. The system focuses on extracting robust visual features from word images and using DTW to measure similarity between these feature sequences. The methodology includes SVG-based word localization, image preprocessing (binarization, contrast enhancement), extraction of sliding window and Histogram of Oriented Gradients (HOG) features, and finally, sequence matching using DTW with a Sakoe-Chiba band. The system was evaluated on a subset of the validation data, achieving an average F1-score of 0.455 for Top-10 retrieval, demonstrating the viability of traditional feature-based methods for this task.
 
