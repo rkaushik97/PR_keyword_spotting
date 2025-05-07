@@ -1,3 +1,7 @@
+
+dataset/words
+dataset/test/words
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -24,7 +28,7 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
+MANIFESTgit reset
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
