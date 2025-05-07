@@ -32,7 +32,19 @@ The results section of the notebook focuses on evaluating the performance of the
     * Retrieving the top-k most similar images from the dataset for a given query keyword.
     * Visually inspecting these top-k matches.
 
-2.  **Visualization of Top Matches:**
+2. **Quantitative Evaluation**
+   * The DTW-based keyword spotting system, evaluated on the 584 filtered validation words (representing 46 unique frequent labels), yielded the following average Top-10 performance:
+      * **Average Precision@10:** 0.238
+      * **Average Recall@10:** 0.120
+      * **Average F1-score@10:** 0.135
+
+   Sample query evaluations showed varied performance. For instance (TP = True Positives in Top-10 / Total relevant instances of that label in the gallery excluding query):
+      * `300-02-03.png | Label: orders | P: 0.10 R: 0.20 F1: 0.13 (TP: 1/5)`
+      * `300-05-03.png | Label: to     | P: 0.80 R: 0.16 F1: 0.27 (TP: 8/50)`
+
+   The precision indicates that, on average, about 2-3 of the top 10 retrieved items were correct textual matches. The recall is lower, suggesting that while some correct instances are found, many others (if they exist in the filtered gallery)    are not ranked within the top 10. This is partly due to the challenging nature of the task and the visual variability of handwriting.
+
+3.  **Visualization of Top Matches:**
     * The `show_top_matches` function visualizes the results. For a selected query image (keyword), it displays the query itself and the `top_k` images from the dataset that have the smallest Euclidean distance in the HOG feature space.
     * **Correct vs. Incorrect Matches:** The visualization uses border colors (green for a correct match where the label of the retrieved image matches the query label, and red for an incorrect match) to provide an immediate visual assessment of the retrieval quality.
     * The distance value is also displayed for each matched image.
