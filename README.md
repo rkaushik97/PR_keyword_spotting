@@ -1,6 +1,6 @@
 ## Key Word Spotting: Algorithm and Results Summary
 
-This report summarizes the algorithm and results of the Key Word Spotting notebook "KeyWordSpotting.ipynb". The primary goal is to identify handwritten keywords in images.
+This report summarizes the algorithm and results of the Key Word Spotting notebook **KeyWordSpotting.ipynb**. The primary goal is to identify handwritten keywords in images.
 
 ### Algorithm
 
